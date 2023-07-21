@@ -9,7 +9,6 @@ rp_fs = {
     f.write('` + data + `')`);
     },
     look: (path, callback) => {
-        renpy_set("files", [])
         renpy_exec('globals()["files"] = os.listdir(\'' + path + '\')');
         renpy_get("files").then(callback)
     }
