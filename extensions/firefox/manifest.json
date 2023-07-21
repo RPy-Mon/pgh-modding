@@ -1,0 +1,19 @@
+{
+    "name": "PG Hub Modding extension",
+    "description": "Removes protections.",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "block.js"
+        ],
+        "persistent": true
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "https://*.porngameshub.com/*",
+        "https://static.porngameshub.com/*",
+        "https://porngameshub.com/*"
+    ]
+}
